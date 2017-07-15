@@ -1,0 +1,315 @@
+/* ==============================================
+
+  =====================
+  = TABLE OF CONTENTS =
+  =====================
+
+  1. Whitespace Removal
+  2. Left Side
+  3. Right Side
+  3. Media Query
+    -
+
+  =================
+  = COLOR PALLETE =
+  =================
+
+  #212121 - Almost Black
+  #F8F8FF - Ghost White
+
+  #703030 - Dark Red
+  #2f343b - Navy Blue
+  #7e827a - Greyish
+  #e3cda4 - Tan
+  #c77966 - Peach
+
+  TODO: find better color scheme
+  TODO: Hover over box color change
+  TODO: Automatic image transition
+  TODO: FIX THIS SHIT WITH THE BUTTONS
+  TODO: Make spritesheet with all icons
+  TODO: Swipe picture sideways
+  Hex Opacity Values
+  100% — FF
+  95% — F2
+  90% — E6
+  85% — D9
+  80% — CC
+  75% — BF
+  70% — B3
+  65% — A6
+  60% — 99
+  55% — 8C
+  50% — 80
+  45% — 73
+  40% — 66
+  35% — 59
+  30% — 4D
+  25% — 40
+  20% — 33
+  15% — 26
+  10% — 1A
+  5% — 0D
+  0% — 00
+
+============================================== */
+
+/* ======================
+   = WHITESPACE REMOVAL =
+   ====================== */
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+
+p, h1, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* =============
+   = LEFT SIDE =
+   ============= */
+
+.left-side {
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon {
+  height: 150px;
+}
+
+.box {
+  height: 33.3333333333%;
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background: #F8F8FF;
+  color: #212121;
+}
+
+.box:hover .box-text {
+  color: #212121;
+}
+
+.big-box {
+  height: 33.3333333333%;
+  width: 66.6666666666%;
+  background: #F8F8FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.big-box-title, .big-box-text, .big-box-button-group {
+  padding: 0 20px 0 20px;
+}
+
+.big-box-title {
+  color: #F8F8FF;
+  font-weight: 800;
+  font-size: 38px;
+  margin: 0;
+}
+
+.big-box-text {
+  color: #F8F8FF;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.big-box-button-icon {
+  height: 30px;
+}
+
+.box-text {
+  font-weight: 600;
+  color: #F8F8FF;
+  margin-top: -15px;
+}
+
+.box-button {
+  border: #F8F8FF solid 1px;
+  background: none;
+  font-weight: 600;
+  font-size: 26px;
+  color: #F8F8FF;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-button:hover {
+  color: #212121;
+  background: #F8F8FF;
+}
+
+.contact-button {
+  margin-left: 15px;
+}
+
+.big-box-button-group {
+  display: flex;
+  align-items: flex-start;
+}
+
+.name-card-box {
+  background: #703030;
+}
+
+.profile-box {
+  background: #7e827a;
+}
+
+.experience-box {
+  background: #c77966;
+}
+
+.education-box {
+  background: #2f343b;
+}
+
+.blog-box {
+  background: #703030;
+}
+
+.social-menu-box {
+  background: #e3cda4;
+}
+
+.contact-box {
+  background: #c77966;
+}
+
+.portfolio-box {
+  background: #e3cda4;
+}
+
+/* ==============
+   = RIGHT SIDE =
+   ============== */
+
+.right-side {
+  height: 100vh;
+  width: 40%;
+  background-image: url(images/test2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.picture-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.carousel-container {
+  padding: 15px 15px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carousel-indicator {
+
+}
+
+.carousel-radio-image-two {
+
+}
+
+.carosel-radio-image-three {
+
+}
+
+input[type=radio] {
+
+}
+
+input[type="radio"]:checked {
+
+}
+
+input[type="radio"]:hover {
+
+}
+
+.arrow-buttons-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 15px 0 15px;
+}
+
+.left-arrow, .right-arrow {
+  background: gray;
+  background-color: rgba(184, 184, 184, 0.6);
+  border: rgba(248, 248, 255, 0.6) solid;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-icon {
+  height: 25px;
+}
+
+@media screen and (max-width: 320px){
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: none;
+  }
+  .picture-box {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+     order: -1;
+     width: 100%;
+  }
+
+  .left-side {
+    order: 2;
+  }
+}
