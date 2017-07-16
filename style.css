@@ -7,6 +7,9 @@
   1. Whitespace Removal
   2. Left Side
   3. Right Side
+    * Carousel Image Gallery
+    * Carousel Radio Buttons
+    * Carousel Arrow Buttons
   3. Media Query
     -
 
@@ -217,6 +220,9 @@ p, h1, button {
   align-items: flex-start;
 }
 
+
+/* CAROUSEL IMAGE GALLERY */
+
 .picture-box {
   display: flex;
   justify-content: flex-end;
@@ -250,17 +256,41 @@ p, h1, button {
 
 }
 
+/* CAROUSEL RADIO BUTTONS */
+
 input[type=radio] {
-
+  display: none;
 }
 
-input[type="radio"]:checked {
-
+input[type="radio"] + label span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background-color: rgba(105, 105, 105, 0.55);
+  margin-left: 5px;
 }
 
-input[type="radio"]:hover {
-
+input[type="radio"]:hover + label span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background-color: rgb(105,105,105);
 }
+
+input[type="radio"]:checked + label span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background-color: #FFF;
+}
+
+/* ARROW BUTTON */
 
 .arrow-buttons-container {
   display: flex;
