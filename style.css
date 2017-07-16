@@ -67,6 +67,7 @@ body {
 
 main {
   display: flex;
+  overflow: hidden;
 }
 
 p, h1, button {
@@ -304,24 +305,28 @@ input[type="radio"]:checked + label span {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0 15px 0 15px;
 }
 
 .left-arrow, .right-arrow {
-  background: gray;
-  background-color: rgba(184, 184, 184, 0.6);
-  border: rgba(248, 248, 255, 0.6) solid;
+  background-color: rgba(9,9,9, 0.6);
+  border: 2px rgba(161, 162, 153, 0.6) solid;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.left-arrow {
+  transform: rotate(180deg);
+}
+
 .arrow-icon {
   height: 25px;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 320px){
