@@ -1,5 +1,7 @@
 # Adam Mescher Static Comp Challenge 1
 
+This project is a HTML/CSS challange to recreate a layout given an image of the desired design, including both a desktop and mobile layout. 
+
 https://adammescher.github.io/ad-comp-challenge-1/
 
 
