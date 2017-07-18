@@ -6,54 +6,32 @@
 
   1. Whitespace Removal
   2. Left Side
+    * Title Box
   3. Right Side
     * Carousel Image Gallery
     * Carousel Radio Buttons
     * Carousel Arrow Buttons
+    *
   3. Media Query
     -
+
+  =========
+  = FONTS =
+  =========
+
+  1. Open Sans
+    * Font Weights: 300 500 600 800
 
   =================
   = COLOR PALLETE =
   =================
 
-  #212121 - Almost Black
-  #F8F8FF - Ghost White
-
-  #703030 - Dark Red
-  #2f343b - Navy Blue
-  #7e827a - Greyish
-  #e3cda4 - Tan
-  #c77966 - Peach
-
-  TODO: find better color scheme
-  TODO: Hover over box color change
-  TODO: Automatic image transition
-  TODO: FIX THIS SHIT WITH THE BUTTONS
-  TODO: Make spritesheet with all icons
-  TODO: Swipe picture sideways
-  Hex Opacity Values
-  100% — FF
-  95% — F2
-  90% — E6
-  85% — D9
-  80% — CC
-  75% — BF
-  70% — B3
-  65% — A6
-  60% — 99
-  55% — 8C
-  50% — 80
-  45% — 73
-  40% — 66
-  35% — 59
-  30% — 4D
-  25% — 40
-  20% — 33
-  15% — 26
-  10% — 1A
-  5% — 0D
-  0% — 00
+  #3F88C5 - Darker Blue
+  #E61D2B - Red
+  #0D0106 - Smoky Black
+  #97DFFC - Winter Wizard
+  #817F82 - Gray
+  #EFEFEF - isabelline
 
 ============================================== */
 
@@ -89,80 +67,57 @@ p, h1, button {
   flex-flow: row wrap;
 }
 
-.icon {
-  height: 150px;
-}
-
-.box {
-  height: 33.3333333333%;
-  width: 33.3333333333%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.box:hover {
-  background: #F8F8FF;
-  color: #212121;
-}
-
-.box:hover .box-text {
-  color: #212121;
-}
+/* TITLE BOX */
 
 .big-box {
   height: 33.3333333333%;
   width: 66.6666666666%;
-  background: #F8F8FF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
+.title-card-box {
+  background-color: #E61D2B;
+}
+
 .big-box-title, .big-box-text, .big-box-button-group {
   padding: 0 20px 0 20px;
 }
 
-.big-box-title {
-  color: #F8F8FF;
-  font-weight: 800;
-  font-size: 38px;
-  margin: 0;
+.coca-cola-logo {
+  margin-left: 20px;
+  height: 65px;
 }
 
 .big-box-text {
-  color: #F8F8FF;
+  color: #EFEFEF;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .big-box-button-icon {
-  height: 30px;
-}
-
-.box-text {
-  font-weight: 600;
-  color: #F8F8FF;
-  margin-top: -15px;
+  height: 22px;
 }
 
 .box-button {
-  border: #F8F8FF solid 1px;
+  border: #EFEFEF solid 1px;
   background: none;
-  font-weight: 600;
-  font-size: 26px;
-  color: #F8F8FF;
-  padding: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #EFEFEF;
+  width: 125px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: pre-wrap;
 }
 
 .box-button:hover {
-  color: #212121;
-  background: #F8F8FF;
+  color: #0D0106;
+  background: #EFEFEF;
 }
 
 .contact-button {
@@ -174,36 +129,90 @@ p, h1, button {
   align-items: flex-start;
 }
 
-.name-card-box {
-  background: #703030;
+/* GENERAL BOX SETTINGS */
+
+.box {
+  height: 33.3333333333%;
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-box {
-  background: #7e827a;
+.icon {
+  height: 75px;
+  margin-bottom: 30px;
 }
 
-.experience-box {
-  background: #c77966;
+.box:hover {
+  background: #EFEFEF;
+  color: #0D0106;
 }
 
-.education-box {
-  background: #2f343b;
+.box:hover .box-text {
+  color: #0D0106;
 }
 
-.blog-box {
-  background: #703030;
+.box-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #EFEFEF;
+  margin-top: -15px;
 }
 
-.social-menu-box {
-  background: #e3cda4;
+/* HISTORY BOX */
+
+.history-box {
+  background: #3F88C5;
 }
 
-.contact-box {
-  background: #c77966;
+.history-icon-path {
+  fill: #FFF;
 }
 
-.portfolio-box {
-  background: #e3cda4;
+.history-box:hover .history-icon-path {
+  fill: #000;
+}
+
+/* SUSTAINABILITY BOX */
+
+.sustainability-box {
+  background: #97DFFC;
+}
+
+.sustainability-icon-path {
+
+}
+
+/* BRANDS BOX */
+
+.brands-box {
+  background: #0D0106;
+}
+
+/* CAREERS BOX */
+
+.careers-box {
+  background: #817F82;
+}
+
+/* NUTRITION BOX */
+
+.nutrition-box {
+  background: #3F88C5;
+}
+
+/* PRESS BOX */
+
+.press-box {
+  background: #E61D2B;
+}
+
+/* INVESTORS BOX */
+
+.investors-box {
+  background: #97DFFC;
 }
 
 /* ==============
@@ -221,7 +230,6 @@ p, h1, button {
   align-items: flex-start;
 }
 
-
 /* CAROUSEL IMAGE GALLERY */
 
 .picture-box {
@@ -230,31 +238,26 @@ p, h1, button {
   align-items: flex-start;
   flex-flow: row wrap;
   width: 100%;
+  overflow: hidden;
+  background-image: url(images/gallery/gallery-bottle-cap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .gallery-image {
   height: 100%;
   width: 100%;
   align-self: center;
+  z-index: -2;
+  display: inline;
 }
 
 .carousel-container {
+  z-index: 10;
   padding: 15px 15px 0 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-
-.carousel-indicator {
-
-}
-
-.carousel-radio-image-two {
-
-}
-
-.carosel-radio-image-three {
-
 }
 
 /* CAROUSEL RADIO BUTTONS */
@@ -305,8 +308,9 @@ input[type="radio"]:checked + label span {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0 15px 0 15px;
+  margin-bottom: 10%;
 }
 
 .left-arrow, .right-arrow {
@@ -320,6 +324,11 @@ input[type="radio"]:checked + label span {
   justify-content: center;
 }
 
+.left-arrow:hover, .right-arrow:hover {
+  background-color: rgba(9,9,9,1);
+  border: 2px rgba(161,162,153,1) solid;
+}
+
 .left-arrow {
   transform: rotate(180deg);
 }
@@ -329,22 +338,77 @@ input[type="radio"]:checked + label span {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 320px){
+@media (max-width: 960px){
+
+  .big-box-text {
+    font-size: 12px;
+  }
+
+  .coca-cola-logo {
+    height: 35px;
+  }
+
+  .icon {
+    height: 50px;
+  }
+
+  .box-button {
+    font-size: 11px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 735px){
+  body {
+    height: 100vh;
+  }
 
   main {
     display: flex;
-    flex-flow: row wrap;
-    overflow: none;
+    flex-flow: column-reverse;
+    width: 100%;
   }
+
+  .right-side {
+    width: 100%;
+    height: 40vh;
+  }
+
   .picture-box {
-     display: flex;
-     flex-flow: row nowrap;
-     justify-content: flex-start;
-     order: -1;
-     width: 100%;
+    height: 40vh;
+    background-image: url(images/gallery/coke-can-side.jpg);
+  }
+
+  .arrow-buttons-container {
+    height: 40vh;
   }
 
   .left-side {
-    order: 2;
+    width: 100%;
+    height: 65%;
+  }
+
+  .big-box {
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    height: 60px;
+  }
+
+  .box-text {
+    font-size: 10px;
+  }
+
+  .box {
+    width: 50%;
+    height: 200px;
+  }
+
+  .box-button {
+    height: 40px;
   }
 }
